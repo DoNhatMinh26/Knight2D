@@ -42,14 +42,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Enemy
-    uniqueID: 878364527
-    locked: 0
   - name: Fround
     uniqueID: 2489874479
     locked: 0
   - name: Ground
     uniqueID: 2234067249
+    locked: 0
+  - name: Enemy
+    uniqueID: 878364527
     locked: 0
   - name: Player
     uniqueID: 25901061
