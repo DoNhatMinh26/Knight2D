@@ -5,7 +5,8 @@ using Unity.VisualScripting;
 
 public class Player : MonoBehaviour
 {
-    Rigidbody2D rb;
+    private GameManager gameManager;
+    private Rigidbody2D rb;
     private Animator animator;
     private float moveMent;
     [SerializeField] private float moveSpeed = 10f;
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Image hpBar;
     private void Awake()
     {
+        gameManager = FindAnyObjectByType<GameManager>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -108,6 +110,10 @@ public class Player : MonoBehaviour
             {
                 collInfo.gameObject.GetComponent<PatrolEnemy1>().takeDamageE(damageP);
             }
+            if (collInfo.gameObject.GetComponent<PatrolBoss>() != null)
+            {
+                collInfo.gameObject.GetComponent<PatrolBoss>().takeDamageE(damageP);
+            }
         }
     }
     public void TakeDamageP(float damage)
@@ -136,5 +142,13 @@ public class Player : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
         
         
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Coin"))
+        {
+            Destroy(collision.gameObject);
+            gameManager.AddScore(1);
+        }
     }
 }

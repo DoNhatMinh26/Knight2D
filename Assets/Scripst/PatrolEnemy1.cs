@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using Unity.Mathematics;
 
+
 public class PatrolEnemy1 : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 2f;
@@ -21,6 +22,8 @@ public class PatrolEnemy1 : MonoBehaviour
     [SerializeField] private float maxHealth = 5f;
     private float currentHp;
     [SerializeField] private Image hpBar;
+    public GameObject coinPrefab;  
+    
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -117,7 +120,9 @@ public class PatrolEnemy1 : MonoBehaviour
     }
     private void Die()
     {
-
+        
+        Vector3 spawnPos = new Vector3(transform.position.x,transform.position.y+2f,0);
+        Instantiate(coinPrefab, spawnPos, Quaternion.identity);
         Destroy(this.gameObject);
 
     }
