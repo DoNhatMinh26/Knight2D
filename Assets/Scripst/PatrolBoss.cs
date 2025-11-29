@@ -121,7 +121,7 @@ public class PatrolBoss : MonoBehaviour
     private void Die()
     {
 
-        Vector3 spawnPos = new Vector3(transform.position.x, transform.position.y + 2f, 0);
+        Vector3 spawnPos = new Vector3(transform.position.x, transform.position.y-1f, 0);
         Instantiate(coinPrefab, spawnPos, Quaternion.identity);
         Destroy(this.gameObject);
 

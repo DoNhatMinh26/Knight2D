@@ -113,7 +113,7 @@ public class PatrolEnemy1 : MonoBehaviour
     public void takeDamageE(float damage)
     {
 
-
+        animator.SetTrigger("Hurt");
         currentHp -= damage;
         currentHp = Mathf.Max(currentHp, 0);
         if (currentHp <= 0) Die();

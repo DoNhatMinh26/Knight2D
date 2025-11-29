@@ -118,6 +118,7 @@ public class Player : MonoBehaviour
     }
     public void TakeDamageP(float damage)
     {
+        animator.SetTrigger("Hurt");
         currentHp -= damage;
         currentHp = Mathf.Max(currentHp, 0);
         if (currentHp <= 0) Die();
@@ -149,6 +150,11 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject);
             gameManager.AddScore(1);
+        }
+        if (collision.CompareTag("Key"))
+        {
+            Destroy(collision.gameObject);
+            Debug.Log("Win");
         }
     }
 }
