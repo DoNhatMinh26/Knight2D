@@ -21,6 +21,7 @@ public class PatrolBoss : MonoBehaviour
     private float currentHp;
     [SerializeField] private Image hpBar;
     public GameObject coinPrefab;
+    private bool die = true;
 
     private void Awake()
     {
@@ -112,19 +113,28 @@ public class PatrolBoss : MonoBehaviour
     }
     public void takeDamageE(float damage)
     {
-
-
+    
+        if(die == false) return;
+        animator.SetTrigger("Hurt");
         currentHp -= damage;
         currentHp = Mathf.Max(currentHp, 0);
-        if (currentHp <= 0) Die();
+        if (currentHp <= 0) { 
+            Die();
+            die = false;
+        }
     }
     private void Die()
     {
 
         Vector3 spawnPos = new Vector3(transform.position.x, transform.position.y-1f, 0);
         Instantiate(coinPrefab, spawnPos, Quaternion.identity);
-        Destroy(this.gameObject);
+        animator.SetTrigger("Die");
+        
 
+    }
+    private void OnDieAnimationEnd()
+    {
+        Destroy(gameObject);
     }
     private void UpdateHpBar()
     {

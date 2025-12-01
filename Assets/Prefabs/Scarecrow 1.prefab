@@ -177,6 +177,8 @@ MonoBehaviour:
   maxHealth: 10
   hpBar: {fileID: 6193126728918887319}
   coinPrefab: {fileID: 7328463120452000406, guid: 2697106467f6cb0438c3a865d01babe7, type: 3}
+  filePrefab: {fileID: 1831150373840387724, guid: 402d5ff5d67a89a44a251ce81d296e05, type: 3}
+  dropChance: 1
 --- !u!70 &3824650842445355019
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -22,8 +22,10 @@ public class PatrolEnemy1 : MonoBehaviour
     [SerializeField] private float maxHealth = 5f;
     private float currentHp;
     [SerializeField] private Image hpBar;
-    public GameObject coinPrefab;  
-    
+    [SerializeField] private GameObject coinPrefab;
+    [SerializeField] private GameObject filePrefab;
+    [SerializeField] float dropChance = 1f; // 100%
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -120,11 +122,19 @@ public class PatrolEnemy1 : MonoBehaviour
     }
     private void Die()
     {
+        Vector3 spawnPosCoin = new Vector3(transform.position.x,transform.position.y+2f,0);
+        Instantiate(coinPrefab, spawnPosCoin, Quaternion.identity);
         
-        Vector3 spawnPos = new Vector3(transform.position.x,transform.position.y+2f,0);
-        Instantiate(coinPrefab, spawnPos, Quaternion.identity);
-        Destroy(this.gameObject);
-
+        if (UnityEngine.Random.value < dropChance)
+        {
+            Vector3 spawnPosFile = new Vector3(transform.position.x + 0.5f, transform.position.y + 2f, 0);
+            Instantiate(filePrefab, spawnPosFile, Quaternion.identity);
+        }
+        animator.SetTrigger("Die");
+    }
+    private void OnDieAnimationEnd()
+    {
+        Destroy(gameObject);
     }
     private void UpdateHpBar()
     {

@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     [SerializeField] float damageP = 1f;
     private float currentHp;
     [SerializeField] private Image hpBar;
+    private Vector3 startPos;
     private void Awake()
     {
         gameManager = FindAnyObjectByType<GameManager>();
@@ -35,6 +36,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         currentHp = maxHealth;
+        startPos = transform.position;
     }
 
     // Update is called once per frame
@@ -125,9 +127,8 @@ public class Player : MonoBehaviour
     }
     private void Die()
     {
-
-        Destroy(this.gameObject);
-
+        //Destroy(this.gameObject);
+        gameManager.GameOver();
     }
     private void UpdateHpBar()
     {
@@ -154,7 +155,24 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Key"))
         {
             Destroy(collision.gameObject);
-            Debug.Log("Win");
+            gameManager.GameWin();
         }
+        if (collision.CompareTag("checkroi"))
+        {
+            
+            animator.SetTrigger("Hurt");
+            currentHp -= 10f;
+            currentHp = Mathf.Max(currentHp, 0);
+            if (currentHp <= 0) Die();
+            transform.position = startPos;
+        }
+        if (collision.CompareTag("File"))
+        {
+            currentHp += 10f;
+            if (currentHp > maxHealth) currentHp = maxHealth;
+            Destroy(collision.gameObject);
+            
+        }
+
     }
 }
