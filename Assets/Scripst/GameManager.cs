@@ -54,6 +54,17 @@ public class GameManager : MonoBehaviour
         UpdateScore();
         //ko nhận inputs
         Time.timeScale = 1;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("map 1");
     }
+    public void MainMenu()
+    {
+        isGameOver = false;
+        score = 0;
+        UpdateScore();
+        //ko nhận inputs
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+    }
+
+ 
 }
