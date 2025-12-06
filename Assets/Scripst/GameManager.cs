@@ -66,5 +66,14 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
- 
+    public void Continue()
+    {
+        isGameOver = false;
+        score = 0;
+        UpdateScore();
+        //ko nhận inputs
+        Time.timeScale = 1;
+        gameWinUi.SetActive(false);
+        SceneManager.LoadScene("map 2");
+    }
 }
