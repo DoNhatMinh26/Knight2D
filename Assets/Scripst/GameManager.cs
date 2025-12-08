@@ -40,13 +40,16 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        if (isGameOver) return; // chặn gọi lặp
         isGameOver = true;
-        score = 0;
-        //ko nhận inputs
-        Time.timeScale = 0;
 
+        AudioManager.Instance.SFX_Die();
+
+        score = 0;
+        Time.timeScale = 0;
         gameOverUi.SetActive(true);
     }
+
 
     public void GameWin()
     {

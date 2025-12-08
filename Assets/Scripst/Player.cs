@@ -1,10 +1,14 @@
-using UnityEngine;
+﻿using UnityEngine;
 using Unity.Mathematics;
 using UnityEngine.UI;
 using Unity.VisualScripting;
 
 public class Player : MonoBehaviour
 {
+    [Header("Run SFX")]
+    [SerializeField] private float runSfxInterval = 0.35f; // nhịp bước chân
+    [SerializeField] private float runSfxVolume = 0.6f;    // nhỏ hơn jump/attack
+    private float runSfxTimer = 0f;
     private GameManager gameManager;
     private Rigidbody2D rb;
     private Animator animator;
@@ -18,7 +22,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float distancePoint = 1f;
     private bool jumpPressed = false;
     [SerializeField] private float maxHealth = 3f;
-    
+    [SerializeField] private float attackCooldown = 0.5f;
+    private float nextAttackTime = 0f;
+
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackRadius = 1f;
     [SerializeField] LayerMask LayerPlayer;
@@ -47,7 +53,7 @@ public class Player : MonoBehaviour
         Movement();
         jump();
         Animation();
-
+        HandleRunSFX();
     }
     private void FixedUpdate()
     {
@@ -82,6 +88,7 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGround)
         {
             jumpPressed = true;
+            AudioManager.Instance.SFX_Jump();
         }
     }
 
@@ -97,9 +104,30 @@ public class Player : MonoBehaviour
         {
             animator.SetFloat("Run", 0f);
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Time.time >= nextAttackTime)
         {
+            nextAttackTime = Time.time + attackCooldown;
             animator.SetTrigger("Attack1");
+            AudioManager.Instance.SFX_Attack();
+            Attack();
+        }
+    }
+
+    private void HandleRunSFX()
+    {
+        bool isRunning = Mathf.Abs(moveMent) > 0.1f && isGround;
+
+        if (!isRunning)
+        {
+            runSfxTimer = 0f;
+            return;
+        }
+
+        runSfxTimer -= Time.deltaTime;
+        if (runSfxTimer <= 0f)
+        {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.run, runSfxVolume);
+            runSfxTimer = runSfxInterval;
         }
     }
 
@@ -118,9 +146,12 @@ public class Player : MonoBehaviour
             }
         }
     }
+
     public void TakeDamageP(float damage)
     {
         animator.SetTrigger("Hurt");
+        AudioManager.Instance.SFX_Hit();
+
         currentHp -= damage;
         currentHp = Mathf.Max(currentHp, 0);
         if (currentHp <= 0) Die();
@@ -149,17 +180,19 @@ public class Player : MonoBehaviour
     {
         if (collision.CompareTag("Coin"))
         {
+            AudioManager.Instance.SFX_TakeCoin();
             Destroy(collision.gameObject);
             gameManager.AddScore(1);
         }
         if (collision.CompareTag("Key"))
         {
+            AudioManager.Instance.SFX_Win();
             Destroy(collision.gameObject);
             gameManager.GameWin();
         }
         if (collision.CompareTag("checkroi"))
         {
-            
+
             animator.SetTrigger("Hurt");
             currentHp -= 10f;
             currentHp = Mathf.Max(currentHp, 0);
