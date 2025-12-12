@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
         Movement();
         jump();
         Animation();
-        HandleRunSFX();
+        HandleRunSFX(); 
     }
     private void FixedUpdate()
     {

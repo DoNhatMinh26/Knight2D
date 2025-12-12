@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 7e928e7898af90a428ce24fb05908f6f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5334699340051098612
+    second: pirate-medieval-game-interface-elements_0
+  - first:
+      213: 626352160860548006
+    second: pirate-medieval-game-interface-elements_1
+  - first:
+      213: -4393359207449976879
+    second: pirate-medieval-game-interface-elements_2
+  - first:
+      213: -1319233396207168917
+    second: pirate-medieval-game-interface-elements_3
+  - first:
+      213: 5375165061942047789
+    second: pirate-medieval-game-interface-elements_4
+  - first:
+      213: -2434614143878602651
+    second: pirate-medieval-game-interface-elements_5
+  - first:
+      213: 367291347094377690
+    second: pirate-medieval-game-interface-elements_6
+  - first:
+      213: -3031017595296861297
+    second: pirate-medieval-game-interface-elements_7
+  - first:
+      213: -1400303857088003868
+    second: pirate-medieval-game-interface-elements_8
+  - first:
+      213: -863251903793163325
+    second: pirate-medieval-game-interface-elements_9
+  - first:
+      213: 6280533621113430045
+    second: pirate-medieval-game-interface-elements_10
+  - first:
+      213: 8355226916742322548
+    second: pirate-medieval-game-interface-elements_11
+  - first:
+      213: 1143215479890711320
+    second: pirate-medieval-game-interface-elements_12
+  - first:
+      213: -3828574839517673241
+    second: pirate-medieval-game-interface-elements_13
+  - first:
+      213: -768007338899610363
+    second: pirate-medieval-game-interface-elements_14
+  - first:
+      213: -8970276467799689006
+    second: pirate-medieval-game-interface-elements_15
+  - first:
+      213: -8946489740525404627
+    second: pirate-medieval-game-interface-elements_16
+  - first:
+      213: -8608453029088622146
+    second: pirate-medieval-game-interface-elements_17
+  - first:
+      213: -5965043153958028216
+    second: pirate-medieval-game-interface-elements_18
+  - first:
+      213: -5929061542888970610
+    second: pirate-medieval-game-interface-elements_19
+  - first:
+      213: -2769983107368757924
+    second: pirate-medieval-game-interface-elements_20
+  - first:
+      213: 7451827303534099538
+    second: pirate-medieval-game-interface-elements_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 445
+        width: 543
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fba14b09c8a80a40800000000000000
+      internalID: 5334699340051098612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_1
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 553
+        width: 486
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab2464c8ff31b800800000000000000
+      internalID: 626352160860548006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_2
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 879
+        width: 258
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df904de317a703c0800000000000000
+      internalID: -4393359207449976879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_3
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 882
+        width: 182
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b625d3b373421bde0800000000000000
+      internalID: -1319233396207168917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_4
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 750
+        width: 272
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24752e152c689a40800000000000000
+      internalID: 5375165061942047789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_5
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 756
+        width: 182
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56069f4d553863ed0800000000000000
+      internalID: -2434614143878602651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_6
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 622
+        width: 268
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad492a0c881e81500800000000000000
+      internalID: 367291347094377690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_7
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 631
+        width: 182
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f833f5c5e89afe5d0800000000000000
+      internalID: -3031017595296861297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_8
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 338
+        width: 95
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e009a4af0f119ce0800000000000000
+      internalID: -1400303857088003868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_9
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 338
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c39aba97fc1504f0800000000000000
+      internalID: -863251903793163325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_10
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 338
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d102d5e7d00f82750800000000000000
+      internalID: 6280533621113430045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_11
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 338
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4795536ec9ab3f370800000000000000
+      internalID: 8355226916742322548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_12
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 104
+        width: 470
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8131d940c648ddf00800000000000000
+      internalID: 1143215479890711320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_13
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 103
+        width: 421
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e80d86d77b2edac0800000000000000
+      internalID: -3828574839517673241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_14
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 223
+        width: 95
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505eef3f46d7755f0800000000000000
+      internalID: -768007338899610363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_15
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 224
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8f0cf341d238380800000000000000
+      internalID: -8970276467799689006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_16
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 224
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e7e454bfea7d380800000000000000
+      internalID: -8946489740525404627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_17
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 223
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9898f5491a88880800000000000000
+      internalID: -8608453029088622146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_18
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 105
+        width: 95
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cb47a0bd8e73da0800000000000000
+      internalID: -5965043153958028216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_19
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 106
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e866ca4b0fdb7bda0800000000000000
+      internalID: -5929061542888970610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_20
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 106
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55d3733a0b0f89d0800000000000000
+      internalID: -2769983107368757924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirate-medieval-game-interface-elements_21
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 106
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25cf4ba73753a6760800000000000000
+      internalID: 7451827303534099538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pirate-medieval-game-interface-elements_0: 5334699340051098612
+      pirate-medieval-game-interface-elements_1: 626352160860548006
+      pirate-medieval-game-interface-elements_10: 6280533621113430045
+      pirate-medieval-game-interface-elements_11: 8355226916742322548
+      pirate-medieval-game-interface-elements_12: 1143215479890711320
+      pirate-medieval-game-interface-elements_13: -3828574839517673241
+      pirate-medieval-game-interface-elements_14: -768007338899610363
+      pirate-medieval-game-interface-elements_15: -8970276467799689006
+      pirate-medieval-game-interface-elements_16: -8946489740525404627
+      pirate-medieval-game-interface-elements_17: -8608453029088622146
+      pirate-medieval-game-interface-elements_18: -5965043153958028216
+      pirate-medieval-game-interface-elements_19: -5929061542888970610
+      pirate-medieval-game-interface-elements_2: -4393359207449976879
+      pirate-medieval-game-interface-elements_20: -2769983107368757924
+      pirate-medieval-game-interface-elements_21: 7451827303534099538
+      pirate-medieval-game-interface-elements_3: -1319233396207168917
+      pirate-medieval-game-interface-elements_4: 5375165061942047789
+      pirate-medieval-game-interface-elements_5: -2434614143878602651
+      pirate-medieval-game-interface-elements_6: 367291347094377690
+      pirate-medieval-game-interface-elements_7: -3031017595296861297
+      pirate-medieval-game-interface-elements_8: -1400303857088003868
+      pirate-medieval-game-interface-elements_9: -863251903793163325
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -53,11 +53,13 @@ public class GameManager : MonoBehaviour
 
     public void GameWin()
     {
+        AudioManager.Instance.SFX_Win();
+
         score = 0;
-        //ko nhận inputs
         Time.timeScale = 0;
         gameWinUi.SetActive(true);
     }
+
 
     public void Replay()
     {

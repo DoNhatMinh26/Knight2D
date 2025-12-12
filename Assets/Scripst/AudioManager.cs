@@ -71,4 +71,31 @@ public class AudioManager : MonoBehaviour
     public void SFX_Attack() => PlaySFX(atack, attackVol);
     public void SFX_Win() => PlaySFX(win, winVol);
     public void SFX_TakeCoin() => PlaySFX(takecoin, coinVol);
+
+
+    public void SetMusicVolume(float v)
+    {
+        masterMusicVolume = Mathf.Clamp01(v);
+        if (musicSource != null) musicSource.volume = masterMusicVolume;
+    }
+
+    public void SetSfxVolume(float v)
+    {
+        masterSfxVolume = Mathf.Clamp01(v);
+        // với SFX dùng PlayOneShot nên không set trực tiếp lên sfxSource.volume,
+        // mà masterSfxVolume sẽ nhân vào mỗi lần PlaySFX.
+    }
+
+    public void MuteAll(bool muted)
+    {
+        if (muted)
+        {
+            if (musicSource) musicSource.volume = 0f;
+        }
+        else
+        {
+            if (musicSource) musicSource.volume = masterMusicVolume;
+        }
+    }
+
 }
