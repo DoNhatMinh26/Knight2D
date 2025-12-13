@@ -250,8 +250,8 @@ MonoBehaviour:
   LayerPlayer:
     serializedVersion: 2
     m_Bits: 128
-  damageE: 2
-  maxHealth: 20
+  damageE: 4
+  maxHealth: 25
   hpBar: {fileID: 5509917680712760329}
   coinPrefab: {fileID: 7328463120452000406, guid: 2697106467f6cb0438c3a865d01babe7, type: 3}
 --- !u!1 &4680256120651385979

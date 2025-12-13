@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
             nextAttackTime = Time.time + attackCooldown;
             animator.SetTrigger("Attack1");
             AudioManager.Instance.SFX_Attack();
-            Attack();
+        
         }
     }
 
